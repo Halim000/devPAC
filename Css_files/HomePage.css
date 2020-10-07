@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sansita+Swashed:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&display=swap');
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+h1{
+    color: greenyellow;
+    font-size: 100px;
+    font-size: auto;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+#logo{
+    flex: 2;
+    float: right;
+    height: 40px;
+    margin: 30px;
+    border-radius: 30px;
+}
+#navbar{
+    display: flex;
+    /* flex-flow: row;  */
+    justify-content: flex-end;
+    padding:solid green 10px;
+    margin:solid red 10px;
+    font-family: 'Kaushan Script', cursive;
+
+}
+.navIcon{
+    flex: 2;
+    size: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10%;
+    color: greenyellow;
+    padding: 10px;
+    padding-left: 2% ;
+    margin: 20px ;
+
+}
+.nav_items{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.about{
+    border: 1px solid grey;
+    font-size: 20px;
+    margin: 1px;
+    padding: 5px;
+    
+}
+
+#about_style{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    font-family: 'Dancing Script', cursive;
+    margin: 20px;
+    width: 150px;
+    height: 10px;
+    
+}
+.general_text{
+    font-family: 'Indie Flower', cursive;
+}
+.buttons{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    float: center;
+    width:100px;
+    height: 20%;
+    padding: 2%;
+}
+.button_pebble{
+    width: 50%;
+    height:50%;
+    border-bottom: 40px;
+    box-shadow: 10px lawngreen;
+}
+.button_cactus{
+    width: 50%;
+    height:50%;
+    margin-top: 40px;
+    box-shadow: 10px lightgray;
+
+}
+#side_images{
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+}
+.container{
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    height: 300px;
+}
+.triangle-right {
+	/* width: 10%;
+	height: 60%;
+	border-top: 100px solid transparent;
+    border-left: 40px solid blue;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid transparent; */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 257px 0 257px 150px;
+    border-color: transparent transparent transparent #007bff;
+
+}
+#cacti{
+    width: 300px;
+    height: 300px;
+    border-width: 250px 0 250px 150px 0;
+     
+}
+#white{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-width: 250px 0 250px 150px 0;
+     
+}
+#desert{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-width: 250px 0 250px 150px 0;
+     
+}
+#white_2{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-width: 250px 0 250px 150px 0;
+     
+}
+#pebbles{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-width: 250px 0 250px 150px 0;
+     
+}
+#white_3{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-width: 250px 0 250px 150px 0;
+     
+}
+.images_text{
+    font-family: 'Lobster Two', cursive;
+    vertical-align: middle; 
+    border-color: solid rgb(10, 228, 108) 5px;
+}
+
+
+
+.top-op{
+    display:  flex;
+    align-self: center;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
