@@ -1,46 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sansita+Swashed:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body{
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
 }
 h1{
+    flex: 1;
     color: greenyellow;
-    font-size: 100px;
-    font-size: auto;
+    font-size: 1000%;
+    width: 100%;
+    height: 10pc;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+}
+h2{
+    flex: 1;
+    color: greenyellow;
+    padding-left: 20pc;
+    padding-right: 20pc;
+    padding-bottom: 5pc;
+    font-size: 4pc;
+    width: 50pc;
+    height: 10pc;
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
 }
 #logo{
     flex: 2;
     float: right;
-    height: 40px;
-    margin: 30px;
+    height: 2pc;
+    margin: 2pc;
     border-radius: 30px;
 }
 #navbar{
     display: flex;
     /* flex-flow: row;  */
     justify-content: flex-end;
-    padding:solid green 10px;
-    margin:solid red 10px;
+    padding:solid green 5pc;
+    margin:solid red 5pc;
+    font-family: 'Kaushan Script', cursive;
+
+}
+#navbar_other{
+    display: flex;
+    /* flex-flow: row;  */
+    float: bottom;
+    justify-content: flex-start;
+    padding:solid green 5pc;
+    margin:solid red 5pc;
     font-family: 'Kaushan Script', cursive;
 
 }
 .navIcon{
     flex: 2;
-    size: 200px;
+    size: 20pc;
     display: flex;
     justify-content: space-evenly;
-    font-size: 10%;
+    font-size: 1pc;
     color: greenyellow;
     padding: 10px;
-    padding-left: 2% ;
-    margin: 20px ;
+    padding-left: 2pc ;
+    margin: 2pc ;
 
 }
 .nav_items{
@@ -49,10 +77,10 @@ h1{
 }
 .about{
     border: 1px solid grey;
-    font-size: 20px;
+    font-size: 1.5pc;
     margin: 1px;
-    padding: 5px;
-    
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #about_style{
@@ -61,69 +89,68 @@ h1{
     flex-direction: column;
     float: right;
     font-family: 'Dancing Script', cursive;
-    margin: 20px;
-    width: 150px;
-    height: 10px;
-    
-}
-.general_text{
-    font-family: 'Indie Flower', cursive;
+    color: rgb(0, 14, 14);
+    font-weight: bolder;
+    margin: 2pc;
+    width: 10pc;
+    height: 5pc;
+    clear: both;
 }
 .buttons{
-    flex: 5;
     display: flex;
     flex-direction: column;
     align-self: center;
-    float: center;
-    width:100px;
-    height: 20%;
-    padding: 2%;
+    justify-content: flex-end;    
+    width: 10pc;
+    height: 20pc;
+    padding-right: 10pc;
+    padding-left: 15pc;
+    
 }
 .button_pebble{
-    width: 50%;
-    height:50%;
-    border-bottom: 40px;
-    box-shadow: 10px lawngreen;
+    width: 10pc;
+    height:10pc;
+    margin-bottom: 5pc;
+    padding:5px;
+    background-color: lightskyblue;
+    border: 10px;
+    border-style: solid;
+    border-color: lightskyblue;
+    border-radius: 100px;
+    margin: 0;
+    color: lawngreen;
 }
 .button_cactus{
-    width: 50%;
-    height:50%;
-    margin-top: 40px;
-    box-shadow: 10px lightgray;
-
+    width: 10pc;
+    height: 10pc;
+    margin-top: 5pc;
+    padding:5px;
+    background-color: lightgreen;
+    border: 10px;
+    border-style: solid;
+    border-color: lightgreen;
+    border-radius: 100px;
+    margin: 0;
+    color: lightcoral;
 }
 #side_images{
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 5px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 2pc;
+    align-self: flex-start;
 }
-.container{
+.img_container{
     flex: 4;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    width: 300px;
-    height: 300px;
-}
-.triangle-right {
-	/* width: 10%;
-	height: 60%;
-	border-top: 100px solid transparent;
-    border-left: 40px solid blue;
-    border-right: 10px solid transparent;
-    border-bottom: 100px solid transparent; */
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 257px 0 257px 150px;
-    border-color: transparent transparent transparent #007bff;
-
+    width: 95%;
+    margin: 5%;
 }
 #cacti{
-    width: 300px;
-    height: 300px;
-    border-width: 250px 0 250px 150px 0;
-     
+    width: 20pc;
+    height: 15pc;
+    object-fit: cover;
+    border-radius: 20px;    
 }
 #white{
     width: 300px;
@@ -133,11 +160,10 @@ h1{
      
 }
 #desert{
-    width: 300px;
-    height: 300px;
+    width: 20pc;
+    height: 15pc;
     object-fit: cover;
-    border-width: 250px 0 250px 150px 0;
-     
+    border-radius: 20px;   
 }
 #white_2{
     width: 300px;
@@ -147,10 +173,10 @@ h1{
      
 }
 #pebbles{
-    width: 300px;
-    height: 300px;
+    width: 20pc;
+    height: 15pc;
     object-fit: cover;
-    border-width: 250px 0 250px 150px 0;
+    border-radius: 20px;
      
 }
 #white_3{
@@ -161,17 +187,119 @@ h1{
      
 }
 .images_text{
-    font-family: 'Lobster Two', cursive;
-    vertical-align: middle; 
-    border-color: solid rgb(10, 228, 108) 5px;
+    font-family: 'Satisfy', cursive;
+    color: rgb(0, 14, 14);
+    font-size: 1.5pc;
+    font-weight:bold;
+    vertical-align: middle;
+    justify-content: left; 
+    width: 45%;
+    padding:10px;
+    border-style: solid;
+    border-color: lightcoral;
+    border-radius: 25px;
+    
 }
+.triangle-right {
+	/* width: 10%;
+	height: 60%;
+	border-top: 100px solid transparent;
+    border-left: 40px solid blue;
+    border-right: 10px solid transparent;
+    border-bottom: 100px solid transparent; */
+    
+    float: left;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50pc 0 50pc 30pc;
+    border-color: transparent transparent transparent ;
+    border-radius: 10px;
 
-
-
+}
 .top-op{
-    display:  flex;
-    align-self: center;
-    height: 200px;
-    width: 100%;
+    flex: 1;
+    width: 83pc;
+    height: 20pc;
     object-fit: cover;
+    border-radius: 10px;
+    margin: 1%;
+}
+#ads_home{
+    width: 50%;
+    height: 100px;
+    align-self: flex-end;
+    border-style: ridge;
+    border-color: rgba(233, 228, 228, 0.253);
+    border-radius: 25px;
+}
+#ads{
+    /* display: flex; */
+    width: 20%;
+    height: 500px;
+    float: right;
+    /* clear: both; */
+    border-style: ridge;
+    border-color: rgba(233, 228, 228, 0.253);
+    border-radius: 25px;
+    margin: 5%;
+    margin-right: 1%;
+}
+.general_text{
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    background-color: rgb(248, 248, 182);
+    Padding: 20px
+}
+.rounder{
+    border-radius: 100px;
+    background-color: rgb(248, 248, 182);
+    width: 7pc;
+    height: 7pc;
+    padding: 10px;
+    margin-right: -30px;
+}
+.general_text2{
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    background-color: rgba(181, 250, 171);
+    Padding: 20px
+}
+.rounder2{
+    border-radius: 100px;
+    background-color: rgba(181, 250, 171);
+    width: 7pc;
+    height: 7pc;
+    padding: 10px;
+    margin-right: -30px;
+}
+.general_text3{
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    background-color: rgba(49, 86, 104);
+    Padding: 20px
+}
+.rounder3{
+    border-radius: 100px;
+    background-color: rgba(49, 86, 104);
+    width: 7pc;
+    height: 7pc;
+    padding: 10px;
+    margin-right: -30px;
+}
+#circles_mid{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: flex-start;
+    margin:5pc;
 }
